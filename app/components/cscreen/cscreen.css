@@ -1,0 +1,10 @@
+
+cscreen input {
+    width: 100%;
+    max-width: 396px;
+    height:40px;
+    font-size: 18px;
+    border: 1px solid black;
+    text-align: right;
+    overflow: hidden;
+}

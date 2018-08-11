@@ -1,0 +1,29 @@
+
+.calculator {
+    max-width: 400px;
+}
+
+.header {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    background-color: #1795d4;
+}
+
+.numberFields {
+    width: 77%;
+    font-size:0;
+    float: left;
+}
+
+.operations {
+    margin-left: 4px;
+    width: 20%;
+    font-size: 0;
+    display: inline-block;
+    float: right;
+}

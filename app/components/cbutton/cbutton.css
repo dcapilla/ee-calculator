@@ -1,0 +1,27 @@
+cbutton input {
+    cursor: pointer;
+    background-color: #1795d4;
+    border: 1px solid #373d45;
+    width: 33.33%;
+    height: 40px;
+    display: inline-block;
+}
+
+cbutton.action input {
+    background-color: #e49e1f;
+}
+
+cbutton.operation input {
+    background-color: #373d457d;
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+}
+
+cbutton.total input {
+    background-color: #373d457d;
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+}

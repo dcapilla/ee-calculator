@@ -1,0 +1,35 @@
+<div class="calculator">
+    <div class="header">
+        <img class="logo" src="/assets/images/ee-logo.svg" alt="[=] Equal Experts">
+        <cscreen class="screen" s-value="vm.screenValue"></cscreen>
+    </div>
+    <div class="numberFields">
+        <cbutton class="cbutton action" on-click="vm.setInitialValues()" b-value="C"></cbutton>
+        <cbutton class="cbutton action" on-click="vm.toggleSymbol()" b-value="+/-"></cbutton>
+        <cbutton class="cbutton action" on-click="vm.calculatePercentage()" b-value="%"></cbutton>
+
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="7"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="8"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="9"></cbutton>
+        
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="4"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="5"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="6"></cbutton>
+        
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="1"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="2"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="3"></cbutton>
+        
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="0"></cbutton>
+        <cbutton class="cbutton" on-click="vm.updateValue(value)" b-value="."></cbutton>
+    </div>
+    <div class="operations">
+        <cbutton class="cbutton operation" on-click="vm.updateOperator(value)" b-value="+"></cbutton>
+        <cbutton class="cbutton operation" on-click="vm.updateOperator(value)" b-value="-"></cbutton>
+        <cbutton class="cbutton operation" on-click="vm.updateOperator(value)" b-value="*"></cbutton>
+        <cbutton class="cbutton operation" on-click="vm.updateOperator(value)" b-value="/"></cbutton>
+    </div>
+    <div class="sum">
+        <cbutton class="cbutton total" on-click="vm.updateOperator(value)" b-value="="></cbutton>
+    </div>
+</div>
