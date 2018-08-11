@@ -17,11 +17,3 @@ cbutton.operation input {
     width: 100%;
     height: 40px;
 }
-
-cbutton.total input {
-    background-color: #373d457d;
-    border: 1px solid white;
-    width: 100%;
-    height: 40px;
-    margin-top: 5px;
-}

@@ -27,3 +27,8 @@
     display: inline-block;
     float: right;
 }
+
+.sum .total input {
+    height: 40px;
+    margin-top: 5px;
+}
