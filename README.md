@@ -9,7 +9,7 @@ First, you need [Node.js](https://nodejs.org/) to be installed in your dev envir
     
     git clone https://github.com/dcapilla/ee-calculator.git
     
-Once the project is cloned you need to run **npm install** to install the dependencies needed. Now you are ready to use the following commands to run and test the project:
+Once the project is cloned you just need to run **npm run start** to install the dependencies needed and run the project. The following commands are used to run and test the project:
 
 - **npm run start** (will start the local web server on localhost:8000)
 - **npm run test** (will start karma for countinous testing once code changes are detected)
