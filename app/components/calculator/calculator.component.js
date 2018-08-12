@@ -23,14 +23,10 @@ angular.module('app').component('calculator', {
     }
 
     this.updateValue = function(newValue) {
-      if (newValue === '.' && this.screenValue.indexOf('.') > -1) {
-        return;
-      }
-
       if (calculatorService.isOperator(this.previousButtonPressed)) {
         this.previousScreenValue = this.screenValue;
         this.screenValue = newValue;
-      } else {
+      } else if (newValue !== '.' || this.screenValue.indexOf('.') === -1) {
         this.screenValue += newValue;
       }
 
@@ -44,16 +40,11 @@ angular.module('app').component('calculator', {
     }
 
     this.updateOperator = function(newOperator) {
-      if (calculatorService.isOperator(this.previousButtonPressed)) {
-        this.operator = newOperator;
-        return;
-      } 
-      
-      if (this.operator && this.previousScreenValue) {
+      if (!calculatorService.isOperator(this.previousButtonPressed) && this.operator && this.previousScreenValue) {
         try {          
           this.screenValue = String(calculatorService.calculate(this.previousScreenValue, this.screenValue, this.operator));
         } catch (e) {
-          this.handleError();
+           return this.handleError();
         }
       }
 
